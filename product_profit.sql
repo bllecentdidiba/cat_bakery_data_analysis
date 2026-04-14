@@ -22,7 +22,7 @@ WHERE table_name = 'order_info';
 -- Lets look for missing values in customer_info
 SELECT 
     COUNT(*) AS total_rows,
-    COUNT(customer_id) AS orion_customer_id,
+    COUNT(customer_id) AS customer_id_count,
     COUNT(customer_name) AS customer_names,
     COUNT(contact_no) AS customer_contacts,
     COUNT(birthday) AS customer_birthdays
@@ -31,10 +31,10 @@ FROM customer_info;
 -- Missing values in product_info
 SELECT 
     COUNT(*) AS total_rows,
-    COUNT(product_id) AS orion_product_id,
-    COUNT(product_name) AS orion_product_names,
+    COUNT(product_id) AS product_id_count,
+    COUNT(product_name) AS product_names,
     COUNT(sales_price) AS product_prices,
-    COUNT("Cost") AS orion_costs
+    COUNT("Cost") AS product_costs
 FROM product_info;
 
 --Duplicates in order_info
@@ -52,7 +52,7 @@ SELECT * FROM CUSTOMER_INFO;
 
 
 --2: Business Questions to solve
---Which products are most profitable and should we discontinue any?
+--Which products are most profitable? Should we discontinue any?
 WITH product_profit AS (
     SELECT 
         p.product_id,
@@ -60,12 +60,12 @@ WITH product_profit AS (
         p.sales_price,
         p."Cost",
         (p.sales_price - p."Cost") AS profit_per_unit,	
-       ROUND(((p.sales_price - p."Cost") / p."Cost") * 100,2) AS profit_margin_percent,
-       COUNT(DISTINCT o.order_id) AS times_ordered,
+        ((p.sales_price - p."Cost") / p."Cost") * 100 AS profit_margin_percent,
+        COUNT(DISTINCT o.order_id) AS times_ordered,
         SUM(o.qty) AS total_units_sold,
-       SUM(o.qty * (p.sales_price - p."Cost")) AS total_profit
+        SUM(o.qty * (p.sales_price - p."Cost")) AS total_profit
     FROM product_info p
-   LEFT JOIN order_info o ON p.product_id = o.product_id
+    LEFT JOIN order_info o ON p.product_id = o.product_id
     GROUP BY p.product_id, p.product_name, p.sales_price, p."Cost"
 )
 SELECT *,
@@ -93,7 +93,7 @@ SELECT *,
        100 * (total_profit - LAG(total_profit) OVER (ORDER BY year, month_num)) / 
              LAG(total_profit) OVER (ORDER BY year, month_num) AS month_over_month_growth
 FROM monthly_sales
-ORDER BY "year", month_num;
+ORDER BY year, month_num;
 
 --Who are our most valuable customers and how can we segment them for targeted marketing?
 -- I first calculated RFM metrics
@@ -113,7 +113,7 @@ WITH customer_orders AS (
 ),
 rfm_scores AS (
     SELECT *,
-           NTILE(4) OVER (ORDER BY frequency DESC) AS frequency_score,
+           NTILE(4) OVER (ORDER BY frequency DESC) AS frequency_score, -- Using NTILE(4) to segment customers into quartiles based on behavior
            NTILE(4) OVER (ORDER BY monetary DESC) AS monetary_score,
            NTILE(4) OVER (ORDER BY (analysis_date - last_order_date)) AS recency_score
     FROM customer_orders
@@ -128,25 +128,4 @@ SELECT *, (recency_score + frequency_score + monetary_score) AS rfm_total,
        END AS customer_segment
 FROM rfm_scores
 ORDER BY rfm_total DESC;
-
---Which employees are our top performers ? Also who needs training?
-WITH employee_metrics AS (
-    SELECT e.employee_name,
-       COUNT(DISTINCT o.order_id) AS total_orders_handled,
-        COUNT(DISTINCT o.customer_id) AS unique_customers_served,
-         SUM(o.quantity_ordered) AS total_products_sold,
-         AVG(o.quantity_ordered) AS avg_quantity_per_order,
-        RANK() OVER (ORDER BY COUNT(DISTINCT o.order_id) DESC) AS order_rank
-    FROM orion_employee_addresses e
-    JOIN orion_order_fact o ON e.employee_id = o.employee_id
-    GROUP BY e.employee_name
-)
-SELECT *,
-       CASE 
-           WHEN order_rank <= 3 THEN 'Top Performer'
-           WHEN order_rank <= 7 THEN 'Firm Contributor'
-           ELSE 'Needs 	More training'
-       END AS performance_tier
-FROM employee_metrics
-ORDER BY total_orders_handled DESC;
 
