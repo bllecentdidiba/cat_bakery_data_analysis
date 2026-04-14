@@ -3,11 +3,9 @@ This project analyzes customer, product and order data for a cat bakery to uncov
 
 ##1. Products
 
--**Salmon Bagel** made the most money overall (R465 total profit)
-
--**Tuna Cheese Bake** has a 100% profit margin : double your money on every sale
-
--**Salmon Roll** and **Pawstry** only make R3 per unit. Probably need to raise prices or drop them.
+-Salmon Bagel generated the highest total profit (R465), making it the top-performing product overall.
+-Tuna Cheese Bake achieved a 100% profit margin, indicating exceptionally high profitability per unit sold.
+-Salmon Roll and Pawstry generate approximately R3 profit per unit, suggesting low profitability. These products may require price adjustments or strategic review.
 
 ##2. Customers
 
