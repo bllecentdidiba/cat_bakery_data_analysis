@@ -1,5 +1,5 @@
 # Cat_bakery_data_analysis
-This project analyzes customer, product and order data for a cat bakery to uncover actionable business insights. Using PostgreSQL (CTEs, window functions, aggregations) and Excel visualizations, I identified top performing products, segmented customers using RFM analysis and evaluated employee performance. 
+This project analyzes customer, product and order data for a cat bakery to uncover actionable business insights. Using PostgreSQL (CTEs, window functions, aggregations) and Excel visualizations, I identified top performing products and segmented customers using RFM analysis. 
 
 ## 1. Products
 
@@ -17,14 +17,6 @@ This project analyzes customer, product and order data for a cat bakery to uncov
 
 -Recommendation: Prioritize re-engagement strategies for high spending but inactive customers to prevent churn and recover lost revenue.
 
-## 3. Employees
-
--84% of employees need more training which is most of the team
-
--Sharyn Clarkson is identified as a top performer, handling 12 orders, selling 66 products, and averaging 5.5 items per order.
-
--Recommendation: Implement a mentorship program, pairing top performing employees with lower performing staff to improve overall productivity.
-
 ## 4. Monthly Trends
 
 -June experienced a decline in performance, with total profit of R199 which represented a 28% decrease compared to May.
@@ -41,8 +33,6 @@ This project analyzes customer, product and order data for a cat bakery to uncov
 
 -Reconsider the pricing for **Salmon Roll and Pawstry** (R3 profit is too low)
 
--Provide targeted training interventions for underperforming employees to improve efficiency
-
 **Recommendation for the next 3 months**
 
 -Introduce a customer loyalty program (e.g. targeted discounts or rewards) to retain high value customers.
@@ -50,6 +40,3 @@ This project analyzes customer, product and order data for a cat bakery to uncov
 -Bundle Catnip Cake or Stargazy Pie with the slower stuff to move more inventory
 
 -Push promotions in July to get ready for that August spike
-
--Make a proper mentorship programme where top employees help the ones that are struggling
-
