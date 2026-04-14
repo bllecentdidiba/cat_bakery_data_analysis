@@ -2,6 +2,7 @@
 This project analyzes customer, product and order data for a cat bakery to uncover actionable business insights. Using PostgreSQL (CTEs, window functions, aggregations) and Excel visualizations, I identified top performing products, segmented customers using RFM analysis and evaluated employee performance. 
 
 ##1. Products
+
 -**Salmon Bagel** made the most money overall (R465 total profit)
 
 -**Tuna Cheese Bake** has a 100% profit margin — double your money on every sale
@@ -9,6 +10,7 @@ This project analyzes customer, product and order data for a cat bakery to uncov
 -**Salmon Roll** and **Pawstry** only make R3 per unit. Probably need to raise prices or drop them.
 
 ##2. Customers
+
 40% of customers are "Attention Needed" — they spend the most (R150+ on average) but haven't bought in a while
 
 -Only 2 real VIPs : Martha Mittens and Saaliyah Sphynx
@@ -16,6 +18,7 @@ This project analyzes customer, product and order data for a cat bakery to uncov
 -What to do now: Try to win back those high-spending customers before they're gone for good
 
 ##3. Employees
+
 -84% of employees need more training — that's most of the team
 
 -Sharyn Clarkson is doing very well (12 orders, 66 products sold, about 5.5 items per order)
