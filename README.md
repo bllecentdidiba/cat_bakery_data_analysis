@@ -27,13 +27,13 @@ This project analyzes customer, product and order data for a cat bakery to uncov
 
 ##**Recommendations**
 
-**This months' recommendation**
+**This months' recommendations**
 
 -Try to win back the 8 "Attention Needed" customers, they spend big but haven't shown up lately
 
 -Reconsider the pricing for **Salmon Roll and Pawstry** (R3 profit is too low)
 
-**Recommendation for the next 3 months**
+**Recommendations for the next 3 months**
 
 -Introduce a customer loyalty program (e.g. targeted discounts or rewards) to retain high value customers.
 
