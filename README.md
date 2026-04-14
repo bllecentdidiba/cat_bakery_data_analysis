@@ -11,7 +11,7 @@ This project analyzes customer, product and order data for a cat bakery to uncov
 
 ##2. Customers
 
-40% of customers are "Attention Needed": they spend the most (R150+ on average) but haven't bought in a while
+40% of customers are "Attention Needed" : they spend the most (R150+ on average) but haven't bought in a while
 
 -Only 2 real VIPs : Martha Mittens and Saaliyah Sphynx
 
