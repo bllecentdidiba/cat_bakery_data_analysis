@@ -4,7 +4,7 @@
 -- Let's check what tables we have:
 SELECT table_name 
 FROM information_schema.tables 
-WHERE table_schema = 'public';
+WHERE table_schema = 'public'; 
 
 -- Look at each table structure
 SELECT column_name, data_type 
