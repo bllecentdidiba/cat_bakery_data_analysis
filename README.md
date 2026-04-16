@@ -17,7 +17,7 @@ This project analyzes customer, product and order data for a cat bakery to uncov
 
 -Recommendation: Prioritize re-engagement strategies for high spending but inactive customers to prevent churn and recover lost revenue.
 
-## 4. Monthly Trends
+## 3. Monthly Trends
 
 -June experienced a decline in performance, with total profit of R199 which represented a 28% decrease compared to May.
 
