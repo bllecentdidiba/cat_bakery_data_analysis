@@ -17,22 +17,22 @@ Using PostgreSQL (CTEs, window functions, aggregations) and Excel dashboards, th
 
 - **Salmon Bagel** generated the highest total profit (R465), making it the strongest revenue contributor  
 - **Tuna Cheese Bake** achieved a 100% profit margin, indicating high per-unit profitability  
-- **Salmon Roll** and **Pawstry** generate ~R3 profit per unit, highlighting potential pricing or cost inefficiencies  
+- **Salmon Roll** and **Pawstry** generate ~R3 profit per unit, showing potential pricing inefficiencies  
 
-**Insight:** Profitability is concentrated in a few products, while others dilute overall margins  
+**Insight:** Profitability is concentrated in a few products while others reduce overall margins  
 
 ### Customer Segmentation (RFM Analysis)
 
 - ~40% of customers fall into the “Attention Needed” segment (high historical spend, low recent activity)  
-- Only two high-value loyal customers identified  
+- Only two high-value loyal customers have been identified  
 
-**Insight:** A significant portion of revenue is at risk due to declining customer engagement  
+**Insight:** A large portion of revenue is at risk due to declining customer engagement  
 
 ### Monthly Performance Trends
 
-- Profit declined by 28% in June, indicating a potential operational or demand issue  
-- Performance recovered by ~60% in August, suggesting seasonal or campaign-driven effects  
-- Total profit (Jan–Sep): R2,330  
+- Profit declined by 28% in June, indicating a potential demand issue at this particular month  
+- Performance recovered by almost 60% in August, this suggests seasonal effects  
+- Total profit (Jan–Sep) was R2,330  
 
 **Insight:** Revenue volatility suggests inconsistent demand or lack of sustained engagement strategies  
 
@@ -41,13 +41,13 @@ Using PostgreSQL (CTEs, window functions, aggregations) and Excel dashboards, th
 ### Short-Term Actions
 
 - Re-engage “Attention Needed” customers through targeted promotions or personalised offers  
-- Review pricing or cost structure for low-margin products (Salmon Roll, Pawstry)  
+- Review pricing for low-margin products (Salmon Roll, Pawstry)  
 
 ### Medium-Term Strategy (3 Months)
 
 - Implement a customer loyalty programme to improve retention and customer lifetime value  
-- Introduce product bundling strategies to increase sales of low-performing items  
-- Launch targeted marketing campaigns ahead of historically strong months (e.g., July → August growth period)  
+- Introduce product bundling strategies to increase sales of low-performing items (more revenue per order)
+- Launch targeted marketing campaigns ahead of historically strong months ( July → August growth period)  
 
 ## 4. Business Impact
 
