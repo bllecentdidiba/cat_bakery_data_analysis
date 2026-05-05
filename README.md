@@ -5,7 +5,7 @@ Using PostgreSQL (CTEs, window functions, aggregations) and Excel dashboards, th
 
 **##1. Business Objective**
 
--Identify top-performing and underperforming products
+Identify top-performing and underperforming products
 -Detect customer retention risks using RFM segmentation
 -Analyse monthly performance trends to uncover revenue fluctuations
 -Provide data-driven recommendations to improve profitability
