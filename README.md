@@ -1,10 +1,10 @@
-**# Cat Bakery Data/Business Analysis**
+**Cat Bakery Data/Business Analysis**
 
 This project analyses customer, product, and transactional data to generate actionable business insights aimed at improving profitability, customer retention, and operational performance.
 
 Using PostgreSQL (CTEs, window functions, aggregations) and Excel dashboards, the analysis focuses on identifying key revenue drivers, customer risk segments, and performance trends.
 
-**##1. Business Objective**
+**1. Business Objective**
 
 Identify top-performing and underperforming products
 
@@ -14,9 +14,9 @@ Analyse monthly performance trends to uncover revenue fluctuations
 
 Provide data-driven recommendations to improve profitability
 
-**##2. Key Insights**
+**2. Key Insights**
 
-**#Product Performance**
+**Product Performance**
 
 **Salmon Bagel** generated the highest total profit (R465), making it the strongest revenue contributor
 
