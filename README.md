@@ -1,42 +1,50 @@
-# Cat_bakery_data_analysis
-This project analyzes customer, product and order data for a cat bakery to uncover actionable business insights. Using PostgreSQL (CTEs, window functions, aggregations) and Excel visualizations, I identified top performing products and segmented customers using RFM analysis. 
+**# Cat Bakery Data/Business Analysis**
+This project analyses customer, product, and transactional data to generate actionable business insights aimed at improving profitability, customer retention, and operational performance.
 
-## 1. Products
+Using PostgreSQL (CTEs, window functions, aggregations) and Excel dashboards, the analysis focuses on identifying key revenue drivers, customer risk segments, and performance trends.
 
--Salmon Bagel generated the highest total profit (R465), making it the top performing product overall.
+**##1. Business Objective**
 
--Tuna Cheese Bake achieved a 100% profit margin, this shows exceptionally high profitability per unit sold.
+-Identify top-performing and underperforming products
+-Detect customer retention risks using RFM segmentation
+-Analyse monthly performance trends to uncover revenue fluctuations
+-Provide data-driven recommendations to improve profitability
 
--Salmon Roll and Pawstry generate approximately R3 profit per unit, suggesting low profitability. These products might require price adjustments.
+**##2. Key Insights**
 
-## 2. Customers
+**#Product Performance**
+-**Salmon Bagel** generated the highest total profit (R465), making it the strongest revenue contributor
+-**Tuna Cheese Bake** achieved a 100% profit margin, indicating high per-unit profitability
+-**Salmon Roll** and **Pawstry** generate ~R3 profit per unit, highlighting potential pricing or cost inefficiencies
+**-Insight:** Profitability is concentrated in a few products, while others dilute margins
 
--Approximately 40% of customers fall into the “Attention Needed” segment. These customers spend more (R150+ on average) but have not made recent purchases.
+**Customer Segmentation (RFM Analysis)**
+-~40% of customers fall into the “Attention Needed” segment (high historical spend, low recent activity)
+-Only two high-value loyal customers identified
+-**Insight:** Significant revenue is at risk due to declining customer engagement
 
--Only two high value customers were identified: Martha Mittens and Saaliyah Sphynx.
+**Monthly Performance Trends**
+-Profit declined by 28% in June, indicating a potential operational or demand issue
+-Performance recovered by ~60% in August, suggesting seasonal or campaign-driven effects
+-Total profit (Jan–Sep): R2,330
+-**Insight**: Revenue volatility suggests inconsistent demand or lack of sustained engagement strategies
 
--Recommendation: Prioritize re-engagement strategies for high spending but inactive customers to prevent churn and recover lost revenue.
+**3. Recommendations**
 
-## 3. Monthly Trends
+**Short-Term Actions**
+-Re-engage “Attention Needed” customers through targeted promotions or personalised offers
+-Review pricing or cost structure for low-margin products (Salmon Roll, Pawstry)
 
--June experienced a decline in performance, with total profit of R199 which represented a 28% decrease compared to May.
+**Medium-Term Strategy (3 Months)**
+-Implement a customer loyalty programme to improve retention and lifetime value
+-Introduce product bundling strategies to increase sales of low-performing items
+-Launch targeted marketing campaigns before historically strong months (e.g., July → August growth period)
 
--August showed a strong bounce back, with profit increasing by nearly 60% compared to July.
 
--Total profit from January to September amounted to R2,330.
+**4. Business Impact**
 
-##**Recommendations**
-
-**This months' recommendations**
-
--Try to win back the 8 "Attention Needed" customers, they spend big but haven't shown up lately
-
--Reconsider the pricing for **Salmon Roll and Pawstry** (R3 profit is too low)
-
-**Recommendations for the next 3 months**
-
--Introduce a customer loyalty program (e.g. targeted discounts or rewards) to retain high value customers.
-
--Bundle Catnip Cake or Stargazy Pie with the slower stuff to move more inventory
-
--Push promotions in July to get ready for that August spike
+**If implemented, these recommendations could help in the following ways:**
+-Improve customer retention and reduce revenue leakage
+-Increase average order value through bundling strategies
+-Stabilise monthly revenue performance
+-Enhance overall profitability
