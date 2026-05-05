@@ -1,5 +1,6 @@
---Business Context: Ginger Ramsay, owner of a cat bakery, needs to understand customer behavior, product performance, and employee efficiency to grow his business.
---1:Data Exploration(Understandiing our data) and Cleaning
+--Business Context: Ginger Ramsay, owner of a cat bakery, needs to understand customer behavior, product performance to grow his business.
+
+--1:Data Exploration(Understanding our data) and Cleaning
 
 -- Let's check what tables we have:
 SELECT table_name 
@@ -19,7 +20,7 @@ SELECT column_name, data_type
 FROM information_schema.columns 
 WHERE table_name = 'order_info';
 
--- Lets look for missing values in customer_info
+-- Look for missing values in customer_info
 SELECT 
     COUNT(*) AS total_rows,
     COUNT(customer_id) AS customer_id_count,
@@ -48,7 +49,8 @@ HAVING COUNT(*) > 1;
 
 UPDATE customer_info
 SET birthday = TO_DATE(birthday, 'DD/MM/YYYY');
-SELECT * FROM CUSTOMER_INFO;
+SELECT * 
+FROM CUSTOMER_INFO;
 
 
 --2: Business Questions to solve
@@ -60,7 +62,7 @@ WITH product_profit AS (
         p.sales_price,
         p."Cost",
         (p.sales_price - p."Cost") AS profit_per_unit,	
-        ((p.sales_price - p."Cost") / p."Cost") * 100 AS profit_margin_percent,
+        ROUND(((p.sales_price - p."Cost") / p."Cost")::numeric,4) * 100 AS profit_margin_percent,
         COUNT(DISTINCT o.order_id) AS times_ordered,
         SUM(o.qty) AS total_units_sold,
         SUM(o.qty * (p.sales_price - p."Cost")) AS total_profit
@@ -88,7 +90,7 @@ WITH monthly_sales AS (
     GROUP BY year, month_num, month_name
 )
 SELECT *,
-       100 * total_profit / SUM(total_profit) OVER () AS profit_percentage_of_total,
+       ROUND((100 * total_profit / SUM(total_profit) OVER ())::numeric,4) AS profit_percentage_of_total,
        LAG(total_profit) OVER (ORDER BY year, month_num) AS previous_month_profit,
        100 * (total_profit - LAG(total_profit) OVER (ORDER BY year, month_num)) / 
              LAG(total_profit) OVER (ORDER BY year, month_num) AS month_over_month_growth
@@ -105,7 +107,7 @@ WITH customer_orders AS (
         COUNT(DISTINCT o.order_id) AS frequency,
         SUM(o.qty * (p.sales_price - p."Cost")) AS monetary,
         MAX(o.order_date) AS last_order_date,
-        '2026-03-01'::DATE AS analysis_date
+        CURRENT_DATE::DATE AS analysis_date
     FROM customer_info c
     JOIN order_info o ON c.customer_id = o.customer_id
     JOIN product_info p ON o.product_id = p.product_id
