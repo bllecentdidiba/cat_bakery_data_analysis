@@ -6,9 +6,9 @@ Using PostgreSQL (CTEs, window functions, aggregations) and Excel dashboards, th
 
 ## 1. Business Objective
 
-- Identify top-performing and underperforming products  
+- Identify best performing and underperforming products  
 - Detect customer retention risks using RFM segmentation  
-- Analyse monthly performance trends to uncover revenue fluctuations  
+- Analyse monthly performance trends to uncover revenue changes  
 - Provide data-driven recommendations to improve profitability  
 
 ## 2. Key Insights
@@ -16,14 +16,14 @@ Using PostgreSQL (CTEs, window functions, aggregations) and Excel dashboards, th
 ### Product Performance
 
 - **Salmon Bagel** generated the highest total profit (R465), making it the strongest revenue contributor  
-- **Tuna Cheese Bake** achieved a 100% profit margin, indicating high per-unit profitability  
+- **Tuna Cheese Bake** achieved a 100% profit margin, high per-unit profitability is realised
 - **Salmon Roll** and **Pawstry** generate ~R3 profit per unit, showing potential pricing inefficiencies  
 
 **Insight:** Profitability is concentrated in a few products while others reduce overall margins  
 
 ### Customer Segmentation (RFM Analysis)
 
-- ~40% of customers fall into the “Attention Needed” segment (high historical spend, low recent activity)  
+- Approximately 40% of our customers fall into the “Attention Needed” segment (high historical spend, low recent activity)  
 - Only two high-value loyal customers have been identified  
 
 **Insight:** A large portion of revenue is at risk due to declining customer engagement  
@@ -31,10 +31,10 @@ Using PostgreSQL (CTEs, window functions, aggregations) and Excel dashboards, th
 ### Monthly Performance Trends
 
 - Profit declined by 28% in June, indicating a potential demand issue at this particular month  
-- Performance recovered by almost 60% in August, this suggests seasonal effects  
+- Performance recovered by almost 60% in August  
 - Total profit (Jan–Sep) was R2,330  
 
-**Insight:** Revenue volatility suggests inconsistent demand or lack of sustained engagement strategies  
+**Insight:** Revenue volatility suggests inconsistent demand or lack of sustained engagement strategies on our side
 
 ## 3. Recommendations
 
@@ -57,8 +57,6 @@ If implemented, these recommendations are expected to:
 - Increase average order value through bundling strategies  
 - Stabilise monthly revenue performance  
 - Enhance overall profitability  
-
-- Enhance overall profitability
 
 ## 📊 Visual 1: Total Profit by Product
 
