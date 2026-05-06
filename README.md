@@ -72,7 +72,7 @@ If implemented, these recommendations are expected to:
 
 ![Profit Margin vs Total Profit](scatter_quadrant.png)
 
-*Products in top-right (Stars) = high profit + high margin. Bottom-left (Dogs) = low profit + low margin → consider discontinuing.*
+*Products in top-right (Stars) = high profit + high margin. Bottom-left (Low performers) = low profit + low margin → consider discontinuing.*
 
 ---
 
