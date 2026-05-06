@@ -62,7 +62,7 @@ If implemented, these recommendations are expected to:
 
 ## 📊 Visual 1: Total Profit by Product
 
-![Total Profit by Product](images/profit_bar_chart.png)
+![Total Profit by Product](profit_bar_chart.png)
 
 *Salmon Bagel leads with R465 profit. Top 3 products generate 48% of total profit.*
 
