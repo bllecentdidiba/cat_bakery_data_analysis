@@ -70,7 +70,7 @@ If implemented, these recommendations are expected to:
 
 ## 📊 Visual 2: Strategic Quadrant Analysis
 
-![Profit Margin vs Total Profit](images/scatter_quadrant.png)
+![Profit Margin vs Total Profit](scatter_quadrant.png)
 
 *Products in top-right (Stars) = high profit + high margin. Bottom-left (Dogs) = low profit + low margin → consider discontinuing.*
 
@@ -78,6 +78,6 @@ If implemented, these recommendations are expected to:
 
 ## 📊 Visual 3: Monthly Profit Trend
 
-![Monthly Profit Dashboard](images/monthly_dashboard.png)
+![Monthly Profit Dashboard](monthly_dashboard.png)
 
 *Peak months: April (R334) and August (R323). June dropped 28% from May. August recovered with 60% growth.*
