@@ -57,3 +57,21 @@ If implemented, these recommendations are expected to:
 - Increase average order value through bundling strategies  
 - Stabilise monthly revenue performance  
 - Enhance overall profitability  
+
+## 📊 Visual 1: Total Profit by Product
+
+![Total Profit by Product](images/profit_bar_chart.png)
+
+*Salmon Bagel leads with R465 profit. Top 3 products generate 48% of total profit.*
+
+## 📊 Visual 2: Strategic Quadrant Analysis
+
+![Profit Margin vs Total Profit](images/scatter_quadrant.png)
+
+*Products in top-right (Stars) = high profit + high margin. Bottom-left (Dogs) = low profit + low margin → consider discontinuing.*
+
+## 📊 Visual 3: Monthly Profit Trend
+
+![Monthly Profit Dashboard](images/monthly_dashboard.png)
+
+*Peak months: April (R334) and August (R323). June dropped 28% from May. August recovered with 60% growth.*
