@@ -1,3 +1,7 @@
+#EXECUTIVE SUMMARY
+
+
+
 # Cat Bakery Data & Business Analysis
 
 This project analyses customer, product, and transactional data to generate actionable business insights aimed at improving profitability, customer retention, and operational performance.
