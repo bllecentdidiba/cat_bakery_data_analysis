@@ -2,7 +2,7 @@
 
 This project analyses customer, product, and transactional data to generate actionable business insights aimed at improving profitability, customer retention, and operational performance.
 
-Using PostgreSQL (CTEs, window functions, aggregations) and Excel dashboards, the analysis focuses on identifying key revenue drivers, customer risk segments, and performance trends.
+Using PostgreSQL (CTEs, window functions, aggregations) and PowerBI dashboards, the analysis focuses on identifying key revenue drivers, customer risk segments, and performance trends.
 
 ## 1. Business Objective
 
